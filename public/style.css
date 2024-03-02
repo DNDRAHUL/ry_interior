@@ -104,9 +104,14 @@ a:active {
 /* Topbar 
 ------------- */
 .topbar {
-    padding: 0.5rem 6rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     background: var(--color-base);
     font-family: 'Berlin Sans FB';
+    padding: 10px 20px;
+    z-index: 9999; /* Ensure top bar appears above other content */
 }
 
 .info-content div span {
@@ -129,7 +134,8 @@ a:active {
 ------------- */
 .header {
     position: relative;
-    z-index: 999999 !important;
+    z-index: 999;
+    margin-top: 55px;
 }
 
 
